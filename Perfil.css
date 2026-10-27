@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: url("83105555619699205.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.layout-geral {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.coluna-esquerda {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 70px;
+    flex-shrink: 0;
+}
+
+.coluna-esquerda ul {
+    list-style: none;
+    padding: 15px;
+    background-color: rgba(10, 25, 45, 0.8);
+    border: 1px solid #526b85;
+    border-radius: 10px;
+}
+
+.coluna-esquerda h3 {
+    color: #b9e8ff;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+.container {
+    flex: 1;
+    max-width: 650px;
+    min-width: 0;
+    padding: 25px 30px;
+    background-color: rgba(10, 25, 45, 0.82);
+    border: 1px solid #526b85;
+    border-radius: 12px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #b9e8ff;
+    font-size: 42px;
+    margin: 15px 0 25px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin: 25px 0 15px;
+}
+
+h3 {
+    color: #b9e8ff;
+    font-size: 21px;
+    margin: 25px 0 12px;
+}
+
+
+img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #b9e8ff;
+    margin: 0 auto;
+}
+
+
+p {
+    max-width: 550px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-size: 17px;
+    text-align: justify;
+}
+
+
+.container ul {
+    padding-left: 25px;
+}
+
+.container li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+
+.botao,
+.projetos,
+.botaozinho,
+.botao1 {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #245b83;
+    color: white;
+    border: 1px solid #6c9cbd;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.botao:hover,
+.projetos:hover,
+.botaozinho:hover,
+.botao1:hover {
+    background-color: #347ca9;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+@media (max-width: 700px) {
+    body {
+        padding: 20px 12px;
+        background-attachment: scroll;
+    }
+
+    .layout-geral {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 22px 18px;
+    }
+
+    .coluna-esquerda {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+}
